@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+header,
+section,
+footer {
+  width: 100%;
+  overflow: hidden;
+}
+body {
+  font-size: 1rem;
+  color: #000;
+  font-weight: normal;
+  font-family: 'IBM Plex Sans Thai Looped', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url(../img/bg.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+button {
+  cursor: pointer;
+}
+button,
+input,
+select,
+textarea {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+.container {
+  background: #2b2727;
+  border-radius: 10px;
+  padding: 2rem 7rem;
+}
+.container .wrapper {
+  width: 400px;
+  margin: 0 auto;
+}
+.container .wrapper .row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+.container .wrapper .row:nth-child(2) .items {
+  border-color: rgba(212, 14, 153, 0.836);
+}
+.container .wrapper .row:nth-child(3) .items {
+  border-color: #7e10d8;
+}
+.container .wrapper .row .items {
+  border: 5px solid rgba(14, 189, 212, 0.836);
+  text-transform: uppercase;
+  cursor: pointer;
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
